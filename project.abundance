@@ -74,10 +74,27 @@
       ]
     },
     {
+      "atomType": "Extrude",
+      "x": 0.4211297071129707,
+      "y": 0.8686131386861314,
+      "uniqueID": "id-38",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 1.2,
+          "currentEquation": "1.2"
+        }
+      ]
+    },
+    {
       "atomType": "Fusion",
-      "x": 0.5868200836820083,
-      "y": 0.6788321167883211,
-      "uniqueID": "id-34",
+      "x": 0.5904811715481172,
+      "y": 0.45498783454987834,
+      "uniqueID": "id-42",
       "ioValues": [
         {
           "name": "Shape 1",
@@ -105,9 +122,49 @@
             "color": "#aad7f2",
             "bom": []
           }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": {
+            "geometry": "extrude-circle-10.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-1.2",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
         }
       ],
       "unionType": "Fusion"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.3912133891213389,
+      "y": 0.17518248175182483,
+      "uniqueID": "id-48",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 16.4,
+          "currentEquation": "16.4"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -118,13 +175,23 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-38"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-27",
       "ap2ID": "id-30"
     },
     {
       "ap2Name": "Shape 1",
       "ap1ID": "id-30",
-      "ap2ID": "id-34"
+      "ap2ID": "id-42"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-38",
+      "ap2ID": "id-42"
     }
   ],
   "unitsKey": "MM",
