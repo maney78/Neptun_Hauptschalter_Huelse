@@ -92,8 +92,8 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.5904811715481172,
-      "y": 0.45498783454987834,
+      "x": 0.5878661087866108,
+      "y": 0.7810218978102189,
       "uniqueID": "id-42",
       "ioValues": [
         {
@@ -191,6 +191,33 @@
         {
           "name": "Shape 1",
           "ioValue": {
+            "geometry": "extrude-circle-8.2-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-18",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
             "geometry": "fuse-extrude-circle-10.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-1.2-extrude-circle-9-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-5.7",
             "tags": [],
             "bom": [],
@@ -246,7 +273,7 @@
       "ap2ID": "id-42"
     },
     {
-      "ap2Name": "Shape 1",
+      "ap2Name": "Shape 2",
       "ap1ID": "id-42",
       "ap2ID": "id-67"
     },
@@ -254,6 +281,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-48",
       "ap2ID": "id-51"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-51",
+      "ap2ID": "id-67"
     }
   ],
   "unitsKey": "MM",
